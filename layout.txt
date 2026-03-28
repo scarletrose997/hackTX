@@ -1,0 +1,15 @@
+email-day-planner/
+├── .env.local                 ← your secret keys
+├── app/
+│   ├── layout.tsx             ← boilerplate, barely touch this
+│   ├── page.tsx               ← login page
+│   ├── dashboard/
+│   │   └── page.tsx           ← the main app screen
+│   └── api/
+│       ├── auth/
+│       │   └── [...nextauth]/
+│       │       └── route.ts   ← handles google login
+│       ├── emails/
+│       │   └── route.ts       ← fetches gmail emails
+│       └── plan/
+│           └── route.ts       ← sends emails
